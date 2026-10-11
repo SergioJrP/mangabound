@@ -69,26 +69,15 @@ The recommended-settings page shows one useful main image per task and native `<
 
 The Lua example uses `inverse_reading_order` for right-to-left tap/swipe behavior only. Readers preserve the existing configuration structure, replace the example directory, and back up the file. Review the [official plugin instructions](https://github.com/koreader/koreader/wiki/Tweak-document-settings-by-directory) and current KOReader source when changing this guidance.
 
-## Remaining planned positions
-
-Run the local development guide to see the **Planned image / GIF** callouts (**Imagem / GIF planejado** in Portuguese). Starlight's existing Aside component displays each remaining capture description and stable ID. Production omits author notes entirely.
-
-| Placement ID | Page         | Still needed           |
-| ------------ | ------------ | ---------------------- |
-| `intro-logo` | Introduction | Finished original logo |
-
-Placement IDs/routes/localized descriptions live in [media-plan.mjs](media-plan.mjs), with markers beside the instructions in both MDX locales. [MediaSlot.astro](src/components/MediaSlot.astro) is development-only. Remove a plan entry when both markers are replaced by the real asset. Keep its capture/provenance record here; never publish empty boxes or fake e-reader captures.
-
 ## Logo placement
 
-When the final asset arrives:
+The logo replaces the final `intro-logo` authoring marker in both introductions. The unused placement plan and placeholder component were removed; all planned positions now contain real media. The README logo remains a separate follow-up.
 
-- Use Starlight's [built-in logo configuration](https://starlight.astro.build/reference/configuration/#logo) for a compact mark beside **Mangabound** in the header. Keep the title visible (`replacesTitle: false`). Check light and dark themes; use theme-specific assets if needed.
-- Give the larger illustration one place on the introduction page, at `intro-logo`. Keep it out of tutorial instructions. Use empty alt text if it only repeats the adjacent name; otherwise describe what it adds.
-- Replace the favicon with a simple, legible crop of the mark; an intricate illustration may need a simplified small version.
-- Add the logo near the repository README opening at its source comment.
+JPmarquesbraga supplied the artwork; on 2026-10-11 the maintainer confirmed permission to distribute it under MIT and supplied the larger original. [The asset guide](../assets/README.md) records the unchanged source, conventional crop, platform-specific spacing and exports. No generative editing was used.
 
-No temporary logo or blank branding panel is shipped. Confirm artwork source, license, and permission to distribute before adding it.
+Starlight's [built-in logo configuration](https://starlight.astro.build/reference/configuration/#logo) displays a compact 128 px lossless WebP beside the visible site title. The introduction displays the native-resolution square master at 256 CSS pixels, with Astro-generated lossless WebP alternatives through 4× density and a link to the full-resolution image. The image is decorative beside the app name; the full-size link has a localized accessible label. It is not mixed into tutorial instructions or Storybook capture.
+
+The browser favicon contains 16, 32, 48 and 64 px representations. A separate public `mangabound.ico` matches the desktop ICO and supplies Squirrel's installed-program entry without forcing browsers to download the larger frames. Branding browser tests cover both languages, both themes, mobile layout, actual image loading, full-size navigation, favicon and desktop-icon responses, accessibility, and 4× source selection.
 
 ## Asset and authoring conventions
 

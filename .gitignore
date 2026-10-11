@@ -19,5 +19,5 @@ website/dist/
 website/playwright-report/
 website/src/assets/tutorial/generated/
 
-# Copied in by the Arch package job, from the installers' own default icon.
+# Copied in by the Arch package job, from the app's icon.
 packaging/arch/mangabound.png

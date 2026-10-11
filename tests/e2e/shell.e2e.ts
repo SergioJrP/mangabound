@@ -11,6 +11,52 @@ const { version } = JSON.parse(
 ) as { version: string };
 
 describe('packaged application shell', () => {
+  it('ships the real app icons outside the archive for native window loading', () => {
+    const { binary } = browser.requestedCapabilities['goog:chromeOptions'] as { binary: string };
+    const resources = path.resolve(
+      path.dirname(binary),
+      process.platform === 'darwin' ? '../Resources' : 'resources',
+    );
+    for (const extension of ['png', 'ico']) {
+      const name = `mangabound.${extension}`;
+      assert.deepEqual(
+        readFileSync(path.join(resources, name)),
+        readFileSync(new URL(`../../assets/icons/${name}`, import.meta.url)),
+        `${name} must be available to Electron unchanged`,
+      );
+    }
+    if (process.platform === 'darwin') {
+      const plist = readFileSync(path.join(resources, '..', 'Info.plist'), 'utf8');
+      const iconName = /<key>CFBundleIconFile<\/key>\s*<string>([^<]+)<\/string>/u.exec(plist)?.[1];
+      assert.ok(iconName, 'The macOS bundle must declare its icon');
+      assert.deepEqual(
+        readFileSync(path.join(resources, iconName)),
+        readFileSync(new URL('../../assets/icons/mangabound.icns', import.meta.url)),
+      );
+    }
+  });
+
+  (process.env.MANGABOUND_WAYLAND === '1' ? it.skip : it)(
+    'loads the packaged window icon as a real native image',
+    async () => {
+      const { binary } = browser.requestedCapabilities['goog:chromeOptions'] as { binary: string };
+      const resources = path.resolve(
+        path.dirname(binary),
+        process.platform === 'darwin' ? '../Resources' : 'resources',
+      );
+      const extension = process.platform === 'win32' ? 'ico' : 'png';
+      const icon = await browser.electron.execute(
+        (electron, iconPath: string) => {
+          const image = electron.nativeImage.createFromPath(iconPath);
+          return { empty: image.isEmpty(), size: image.getSize() };
+        },
+        path.join(resources, `mangabound.${extension}`),
+      );
+      assert.equal(icon.empty, false);
+      assert.ok(icon.size.width > 0 && icon.size.height > 0);
+    },
+  );
+
   it('ships the upstream licenses and notices alongside both bundled tools', () => {
     // The production Wayland build disables the main-process debugging bridge. Read the real
     // resources beside the binary WebdriverIO launched, without weakening those fuses.

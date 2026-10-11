@@ -56,11 +56,10 @@ jobs:
             exit 1
           fi
           cp -a "$packaged" packaging/arch/payload
-      - name: Stage the default icon for the PKGBUILD
-        # The file electron-installer-debian and electron-installer-redhat fall back to when no icon
-        # is configured (the two ship identical copies), so every Linux package shows the same one
-        # until the app has an icon of its own. The desktop entry's Icon= names it.
-        run: cp node_modules/electron-installer-debian/resources/icon.png packaging/arch/mangabound.png
+      - name: Stage the app icon for the PKGBUILD
+        # Stage the app's PNG icon for the PKGBUILD; the desktop entry's Icon= names it, and the
+        # .deb and .rpm makers use the same asset.
+        run: cp assets/icons/mangabound.png packaging/arch/mangabound.png
       - name: Set the package version from package.json
         # pacman forbids hyphens in pkgver; RELEASING.md documents the same x.y.z-alpha.N shape
         # every other maker's version transform starts from.

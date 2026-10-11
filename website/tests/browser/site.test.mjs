@@ -2,13 +2,12 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
 import { base } from '../../site.config.mjs';
-import { mediaPlacements } from '../../media-plan.mjs';
 
 const root = base.replace(/\/?$/, '/');
 
 test('published guides never expose authoring media markers', async ({ page }) => {
   for (const locale of ['', 'pt-br/']) {
-    for (const route of new Set(mediaPlacements.map((placement) => placement.route))) {
+    for (const route of ['', 'getting-started/quickstart/', 'user-guide/output-profiles/']) {
       await page.goto(`${root}${locale}${route}`);
       await expect(page.locator('[data-media-slot]')).toHaveCount(0);
     }

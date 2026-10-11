@@ -16,6 +16,8 @@ import { bundleVersionOf, withBundleVersion } from './scripts/lib/bundle-version
 import { mainConfig } from './webpack.main.config';
 import { rendererConfig } from './webpack.renderer.config';
 
+const appIconBase = path.join(import.meta.dirname, 'assets', 'icons', 'mangabound');
+
 const buildForPackagedE2e = process.env.MANGABOUND_E2E === '1';
 
 const { version } = JSON.parse(
@@ -44,9 +46,12 @@ const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
     executableName: 'mangabound',
+    icon: appIconBase,
     extraResource: [
       path.join(import.meta.dirname, 'vendor', 'toolchain'),
       path.join(import.meta.dirname, 'THIRD-PARTY-NOTICES.md'),
+      `${appIconBase}.png`,
+      `${appIconBase}.ico`,
     ],
     // No appVersion here, on any platform. The packager writes it into the packaged app's own
     // package.json, so that app.getVersion() returns it (@electron/packager 20 does; 18 only wrote it
@@ -79,7 +84,11 @@ const config: ForgeConfig = {
   },
   rebuildConfig: {},
   makers: [
-    new MakerSquirrel({}),
+    new MakerSquirrel({
+      setupIcon: `${appIconBase}.ico`,
+      // Squirrel's installed-program entry requires a public URL, not a local path.
+      iconUrl: 'https://gustavommcv.github.io/mangabound/mangabound.ico',
+    }),
     // win32 added alongside darwin: unzip-and-run, no installer, no admin rights needed - this
     // project's answer to a portable Windows build. Investigated a dedicated MSI wizard maker
     // (@electron-forge/maker-wix) instead of/alongside Squirrel first: the wizard UI itself
@@ -89,8 +98,12 @@ const config: ForgeConfig = {
     // the same reason AppImage was: a real, structural defect in the dependency itself, not a
     // fragile hack away from working. See RELEASING.md.
     new MakerZIP({}, ['darwin', 'win32']),
-    new MakerRpm({}),
-    new MakerDeb({}),
+    new MakerRpm({
+      options: { icon: `${appIconBase}.png` },
+    }),
+    new MakerDeb({
+      options: { icon: `${appIconBase}.png` },
+    }),
   ],
   plugins: [
     new WebpackPlugin({

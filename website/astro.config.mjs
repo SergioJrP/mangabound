@@ -23,6 +23,8 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Mangabound',
+      logo: { src: './src/assets/branding/header.webp', alt: '', replacesTitle: false },
+      favicon: '/favicon.ico',
       description:
         'Mangabound organizes manga chapters into volumes, converts them into EPUB, CBZ or PDF for your e-reader, and shares books with KOReader over your local network.',
       routeMiddleware: './src/routeData.ts',
