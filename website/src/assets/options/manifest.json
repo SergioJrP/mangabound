@@ -1,0 +1,2092 @@
+{
+  "schema": 1,
+  "mangapress": "0.8.0",
+  "base": {
+    "profile": "KPW6",
+    "format": "cbz",
+    "flags": ["--manga-style", "--splitter", "both", "--upscale"]
+  },
+  "examples": {
+    "cropping-modes": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["gogo-02"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 1080, "height": 1440 },
+      "variants": [
+        {
+          "id": "disabled",
+          "label": "Page cropping: Disabled",
+          "flags": ["--cropping", "disabled"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 386826,
+          "file": "cropping-modes-disabled.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 100514,
+          "sha256": "7dd54b01531ad0a30707c745e14ae170c806b926c9dac33a40bd4678ef637c35"
+        },
+        {
+          "id": "margins-and-page-numbers",
+          "label": "Page cropping: Margins and page numbers",
+          "flags": ["--cropping", "margins-and-page-numbers"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 437815,
+          "file": "cropping-modes-margins-and-page-numbers.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 116914,
+          "sha256": "8a9c9795d5e5fdcdeb9c9e72df594fb67950a3d0f50fe72119c934571b638bde"
+        }
+      ]
+    },
+    "cropping-power-sizes": {
+      "kind": "sizes",
+      "layout": "grid",
+      "sources": ["gogo-02"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 1080, "height": 1440 },
+      "variants": [
+        {
+          "id": "power-0",
+          "label": "Cropping power: 0",
+          "flags": ["--croppingpower", "0"],
+          "width": 975,
+          "height": 1284,
+          "pageBytes": 326389,
+          "keptPercent": 80.5
+        },
+        {
+          "id": "power-1",
+          "label": "Cropping power: 1",
+          "flags": ["--croppingpower", "1"],
+          "width": 973,
+          "height": 1281,
+          "pageBytes": 322934,
+          "keptPercent": 80.1
+        },
+        {
+          "id": "power-2",
+          "label": "Cropping power: 2",
+          "flags": ["--croppingpower", "2"],
+          "width": 970,
+          "height": 1280,
+          "pageBytes": 322812,
+          "keptPercent": 79.8
+        },
+        {
+          "id": "power-3",
+          "label": "Cropping power: 3",
+          "flags": ["--croppingpower", "3"],
+          "width": 954,
+          "height": 1278,
+          "pageBytes": 321822,
+          "keptPercent": 78.4
+        },
+        {
+          "id": "power-3.5",
+          "label": "Cropping power: 3.5",
+          "flags": ["--croppingpower", "3.5"],
+          "width": 946,
+          "height": 1277,
+          "pageBytes": 321475,
+          "keptPercent": 77.7
+        },
+        {
+          "id": "power-3.75",
+          "label": "Cropping power: 3.75",
+          "flags": ["--croppingpower", "3.75"],
+          "width": 887,
+          "height": 1262,
+          "pageBytes": 314906,
+          "keptPercent": 72
+        },
+        {
+          "id": "power-3.76",
+          "label": "Cropping power: 3.76",
+          "flags": ["--croppingpower", "3.76"],
+          "width": 1080,
+          "height": 1440,
+          "pageBytes": 326636,
+          "keptPercent": 100
+        }
+      ]
+    },
+    "cropping-minimum-sizes": {
+      "kind": "sizes",
+      "layout": "grid",
+      "sources": ["gogo-02"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 1080, "height": 1440 },
+      "variants": [
+        {
+          "id": "minimum-0",
+          "label": "Minimum retained area: 0%",
+          "flags": ["--croppingminimum", "0"],
+          "width": 973,
+          "height": 1281,
+          "pageBytes": 322934,
+          "keptPercent": 80.1
+        },
+        {
+          "id": "minimum-70",
+          "label": "Minimum retained area: 70%",
+          "flags": ["--croppingminimum", "70"],
+          "width": 973,
+          "height": 1281,
+          "pageBytes": 322934,
+          "keptPercent": 80.1
+        },
+        {
+          "id": "minimum-80",
+          "label": "Minimum retained area: 80%",
+          "flags": ["--croppingminimum", "80"],
+          "width": 973,
+          "height": 1281,
+          "pageBytes": 322934,
+          "keptPercent": 80.1
+        },
+        {
+          "id": "minimum-81",
+          "label": "Minimum retained area: 81%",
+          "flags": ["--croppingminimum", "81"],
+          "width": 1080,
+          "height": 1440,
+          "pageBytes": 326636,
+          "keptPercent": 100
+        },
+        {
+          "id": "minimum-90",
+          "label": "Minimum retained area: 90%",
+          "flags": ["--croppingminimum", "90"],
+          "width": 1080,
+          "height": 1440,
+          "pageBytes": 326636,
+          "keptPercent": 100
+        }
+      ]
+    },
+    "cropping-preserve": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["gogo-02"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 1080, "height": 1440 },
+      "variants": [
+        {
+          "id": "0",
+          "label": "Preserved margin: 0%",
+          "flags": ["--preservemargin", "0"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 437815,
+          "file": "cropping-preserve-0.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 116914,
+          "sha256": "8a9c9795d5e5fdcdeb9c9e72df594fb67950a3d0f50fe72119c934571b638bde"
+        },
+        {
+          "id": "50",
+          "label": "Preserved margin: 50%",
+          "flags": ["--preservemargin", "50"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 413685,
+          "file": "cropping-preserve-50.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 110048,
+          "sha256": "ed68f2b91f9ab33d696940c30f12530c7b4515e1a6a5227cc504218ac07682d2"
+        }
+      ]
+    },
+    "cropping-preserve-sizes": {
+      "kind": "sizes",
+      "layout": "grid",
+      "sources": ["gogo-02"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 1080, "height": 1440 },
+      "variants": [
+        {
+          "id": "preserve-0",
+          "label": "Preserved margin: 0%",
+          "flags": ["--preservemargin", "0"],
+          "width": 973,
+          "height": 1281,
+          "pageBytes": 322934,
+          "keptPercent": 80.1
+        },
+        {
+          "id": "preserve-25",
+          "label": "Preserved margin: 25%",
+          "flags": ["--preservemargin", "25"],
+          "width": 1000,
+          "height": 1321,
+          "pageBytes": 326286,
+          "keptPercent": 84.9
+        },
+        {
+          "id": "preserve-50",
+          "label": "Preserved margin: 50%",
+          "flags": ["--preservemargin", "50"],
+          "width": 1027,
+          "height": 1360,
+          "pageBytes": 326514,
+          "keptPercent": 89.8
+        },
+        {
+          "id": "preserve-100",
+          "label": "Preserved margin: 100%",
+          "flags": ["--preservemargin", "100"],
+          "width": 1080,
+          "height": 1440,
+          "pageBytes": 326636,
+          "keptPercent": 100
+        }
+      ]
+    },
+    "cropping-gutters": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 4119 },
+      "variants": [
+        {
+          "id": "disabled",
+          "label": "Inter-panel cropping: Disabled",
+          "flags": ["--webtoon"],
+          "width": 992,
+          "height": 1092,
+          "pageBytes": 184379,
+          "file": "cropping-gutters-disabled.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 771,
+          "bytes": 55302,
+          "sha256": "79d0b6fdd930001c9bf96f6bfd31cbf4bee2eb8631fd1b4e49dc12d7ddf1658c"
+        },
+        {
+          "id": "horizontal",
+          "label": "Inter-panel cropping: Horizontal gaps",
+          "flags": ["--webtoon", "--ipc", "horizontal"],
+          "width": 992,
+          "height": 1004,
+          "pageBytes": 177621,
+          "file": "cropping-gutters-horizontal.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 708,
+          "bytes": 53644,
+          "sha256": "0d059fa3b4c0029b48a5c0aebeda7d033f1d7bc0ec03c276bee43e5d8ea97a9c"
+        },
+        {
+          "id": "both",
+          "label": "Inter-panel cropping: Horizontal and vertical gaps",
+          "flags": ["--webtoon", "--ipc", "both"],
+          "width": 956,
+          "height": 1004,
+          "pageBytes": 177239,
+          "file": "cropping-gutters-both.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 735,
+          "bytes": 57928,
+          "sha256": "98cd0e08619d35a8caeccf768ab85514b5499b108bbefca249876b3d9475e4aa"
+        }
+      ]
+    },
+    "color-pages": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "grayscale",
+          "label": "Color pages: Convert to grayscale",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "file": "color-pages-grayscale.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 54792,
+          "sha256": "94d5198d4382a72bafddfeee37d935ef36e2f17287d81e36fba1dfdb0d459ecb"
+        },
+        {
+          "id": "color",
+          "label": "Color pages: Keep in color",
+          "flags": ["--forcecolor"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 299560,
+          "file": "color-pages-color.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 64110,
+          "sha256": "04cbc3bc8ab014961398e645c977747bf5b698d784cdded4bb279329bbb3daa9"
+        }
+      ]
+    },
+    "gamma": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep01"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "0.6",
+          "label": "Gamma: 0.6",
+          "flags": ["--gamma", "0.6"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 216198,
+          "darkest": 31,
+          "mean": 141.6,
+          "file": "gamma-0.6.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 39394,
+          "sha256": "7af408d175032156edd62193e23a803c72d4aae6ade8ea573359df4c3022e6be"
+        },
+        {
+          "id": "1",
+          "label": "Gamma: 1.0",
+          "flags": ["--gamma", "1.0"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 215518,
+          "darkest": 5,
+          "mean": 108.6,
+          "file": "gamma-1.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 40102,
+          "sha256": "99d6ad61b3ff1a84267cf34c43eec84a635269b68c3c836a98913e28fae91e3c"
+        },
+        {
+          "id": "1.8",
+          "label": "Gamma: 1.8",
+          "flags": ["--gamma", "1.8"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 186932,
+          "darkest": 0,
+          "mean": 78.5,
+          "file": "gamma-1.8.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 33932,
+          "sha256": "964122ab2541cec713ffd97db59b2cd4f1d8114e36d780758f1e7dcda863f9f5"
+        }
+      ]
+    },
+    "autocontrast": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep01"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "monochrome",
+          "label": "Autocontrast: Black-and-white pages only",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 215518,
+          "darkest": 5,
+          "mean": 108.6,
+          "file": "autocontrast-monochrome.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 40102,
+          "sha256": "99d6ad61b3ff1a84267cf34c43eec84a635269b68c3c836a98913e28fae91e3c"
+        },
+        {
+          "id": "all",
+          "label": "Autocontrast: Color pages too",
+          "flags": ["--colorautocontrast"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 222647,
+          "darkest": 0,
+          "mean": 101.6,
+          "file": "autocontrast-all.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 41792,
+          "sha256": "f4a93bec1244b1c4d22df9855b2822c29315cc3ca0bdc40abfc6171f2bc8eb4d"
+        },
+        {
+          "id": "all-autolevel",
+          "label": "Autocontrast: Color pages too, with Auto-level black point",
+          "flags": ["--colorautocontrast", "--autolevel"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 218379,
+          "darkest": 0,
+          "mean": 82.9,
+          "file": "autocontrast-all-autolevel.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 42732,
+          "sha256": "3325366fc9a8fd0efb8bf41398cd39437c4679d754bb5849022de9ceadab6d51"
+        }
+      ]
+    },
+    "rainbow": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "off",
+          "label": "Reduce rainbow effect: Off",
+          "flags": ["--forcecolor"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 299560,
+          "file": "rainbow-off.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 700,
+          "bytes": 30690,
+          "sha256": "a0ea3ba9695e2ef83c904153680925e6ad3ecacf93ac0f7a088c902023af18f6"
+        },
+        {
+          "id": "on",
+          "label": "Reduce rainbow effect: On",
+          "flags": ["--forcecolor", "--eraserainbow"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 298718,
+          "file": "rainbow-on.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 700,
+          "bytes": 30180,
+          "sha256": "4f4d1abc5ad20ee8baacde5903bf079a0a22498a858dd4f4a8bd24baa71699a6"
+        }
+      ]
+    },
+    "spreads-wide-pages": {
+      "kind": "pictures",
+      "layout": "rows",
+      "sources": ["gogo-04", "gogo-03"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 2160, "height": 1440 },
+      "variants": [
+        {
+          "id": "source",
+          "label": "The spread as it came",
+          "flags": [],
+          "original": true,
+          "width": 2160,
+          "height": 1440,
+          "pageBytes": 1321177,
+          "pages": [{ "width": 2160, "height": 1440, "bytes": 1321177 }],
+          "file": "spreads-wide-pages-source.webp",
+          "pictureWidth": 868,
+          "pictureHeight": 588,
+          "bytes": 87226,
+          "sha256": "51a431e43d45d6a998625d3949b4a9063fd9c72865221bdf2445c5ef00259973"
+        },
+        {
+          "id": "split",
+          "label": "Wide pages: Split into two pages",
+          "flags": ["--splitter", "split"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 765965,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 }
+          ],
+          "file": "spreads-wide-pages-split.webp",
+          "pictureWidth": 882,
+          "pictureHeight": 588,
+          "bytes": 99760,
+          "sha256": "d7ff69911c0c1b7674dab20b69363931cbc70d0663cb15386c037d09120a3925"
+        },
+        {
+          "id": "rotate",
+          "label": "Wide pages: Keep whole, as one page",
+          "flags": ["--splitter", "rotate"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 462055,
+          "pages": [{ "width": 1272, "height": 1696, "bytes": 462055 }],
+          "file": "spreads-wide-pages-rotate.webp",
+          "pictureWidth": 448,
+          "pictureHeight": 588,
+          "bytes": 52570,
+          "sha256": "969bb0c914200351940e44d67f41e387dae13d28ea2d3d183f1bc1c9535455cf"
+        },
+        {
+          "id": "both",
+          "label": "Wide pages: Both: the halves, then the whole",
+          "flags": ["--splitter", "both"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 1228020,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 },
+            { "width": 1272, "height": 1696, "bytes": 462055 }
+          ],
+          "file": "spreads-wide-pages-both.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 491,
+          "bytes": 114918,
+          "sha256": "54ea25b74cfc6269f1d48bb8e985cc7143a21e78f45314d9b9c38b403c664c79"
+        }
+      ]
+    },
+    "spreads-too-wide": {
+      "kind": "pictures",
+      "layout": "rows",
+      "sources": ["gogo-04", "gogo-03", "gogo-02"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 3240, "height": 1440 },
+      "variants": [
+        {
+          "id": "source",
+          "label": "The wide page as it came",
+          "flags": [],
+          "original": true,
+          "width": 3240,
+          "height": 1440,
+          "pageBytes": 2107759,
+          "pages": [{ "width": 3240, "height": 1440, "bytes": 2107759 }],
+          "file": "spreads-too-wide-source.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 502,
+          "bytes": 103408,
+          "sha256": "e1d5f84754bb67da389ff69be629e95b07cd6a966f77a2da22dfc959e4732efc"
+        },
+        {
+          "id": "split",
+          "label": "Wide pages: Split into two pages",
+          "flags": ["--splitter", "split"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 383078,
+          "pages": [{ "width": 1272, "height": 1696, "bytes": 383078 }],
+          "file": "spreads-too-wide-split.webp",
+          "pictureWidth": 448,
+          "pictureHeight": 588,
+          "bytes": 37330,
+          "sha256": "9d88cf6cf0ac83f317d3eccfef62a921e43d84209f32491dd6c520af9590e02d"
+        }
+      ]
+    },
+    "spreads-reading-order": {
+      "kind": "pictures",
+      "layout": "rows",
+      "sources": ["gogo-04", "gogo-03"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 2160, "height": 1440 },
+      "variants": [
+        {
+          "id": "right-to-left",
+          "label": "Manga reading order: On",
+          "flags": ["--splitter", "split"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 765965,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 }
+          ],
+          "file": "spreads-reading-order-right-to-left.webp",
+          "pictureWidth": 882,
+          "pictureHeight": 588,
+          "bytes": 99760,
+          "sha256": "d7ff69911c0c1b7674dab20b69363931cbc70d0663cb15386c037d09120a3925"
+        },
+        {
+          "id": "left-to-right",
+          "label": "Manga reading order: Off",
+          "flags": ["--splitter", "split"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 765965,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 380448 },
+            { "width": 1272, "height": 1696, "bytes": 385517 }
+          ],
+          "file": "spreads-reading-order-left-to-right.webp",
+          "pictureWidth": 882,
+          "pictureHeight": 588,
+          "bytes": 99940,
+          "sha256": "339cdcbd133704d0996bfb141574bfb50a2ea471caeb217eaab140bf34796a90"
+        }
+      ]
+    },
+    "spreads-whole-copy": {
+      "kind": "pictures",
+      "layout": "rows",
+      "sources": ["gogo-04", "gogo-03"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 2160, "height": 1440 },
+      "variants": [
+        {
+          "id": "default",
+          "label": "Wide pages: Both, with the whole spread last",
+          "flags": ["--splitter", "both"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 1228020,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 },
+            { "width": 1272, "height": 1696, "bytes": 462055 }
+          ],
+          "file": "spreads-whole-copy-default.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 491,
+          "bytes": 114918,
+          "sha256": "54ea25b74cfc6269f1d48bb8e985cc7143a21e78f45314d9b9c38b403c664c79"
+        },
+        {
+          "id": "first",
+          "label": "Whole spread first",
+          "flags": ["--splitter", "both", "--rotatefirst"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 1228020,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 462055 },
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 }
+          ],
+          "file": "spreads-whole-copy-first.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 491,
+          "bytes": 114234,
+          "sha256": "c553aa17b0eec91aab66856ff69e61af7d34197d5e6db0114a7d4cef508599d5"
+        },
+        {
+          "id": "upright",
+          "label": "Keep the whole spread upright",
+          "flags": ["--splitter", "both", "--norotate"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 1347967,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 },
+            { "width": 1972, "height": 1306, "bytes": 582002 }
+          ],
+          "file": "spreads-whole-copy-upright.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 371,
+          "bytes": 98718,
+          "sha256": "52ecd1805e9ace29b56560d77ea394a35f612d1465ae82acf2e15619065d2a3c"
+        },
+        {
+          "id": "clockwise",
+          "label": "Rotate clockwise",
+          "flags": ["--splitter", "both", "--rotateright"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 1229756,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 },
+            { "width": 1272, "height": 1696, "bytes": 463791 }
+          ],
+          "file": "spreads-whole-copy-clockwise.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 491,
+          "bytes": 114526,
+          "sha256": "ec250215a616e5b5ba9e6d1cb9af523521381d819b0fae946f6316e26830e3d2"
+        }
+      ]
+    },
+    "spreads-restack": {
+      "kind": "pictures",
+      "layout": "rows",
+      "sources": ["gogo-04", "gogo-03"],
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": { "width": 2160, "height": 1440 },
+      "variants": [
+        {
+          "id": "off",
+          "label": "Restack 4-panel strips as 2×2: Off",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 1228020,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 385517 },
+            { "width": 1272, "height": 1696, "bytes": 380448 },
+            { "width": 1272, "height": 1696, "bytes": 462055 }
+          ],
+          "file": "spreads-restack-off.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 491,
+          "bytes": 114918,
+          "sha256": "54ea25b74cfc6269f1d48bb8e985cc7143a21e78f45314d9b9c38b403c664c79"
+        },
+        {
+          "id": "on",
+          "label": "Restack 4-panel strips as 2×2: On",
+          "flags": ["--maximizestrips"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 317195,
+          "pages": [{ "width": 1272, "height": 1696, "bytes": 317195 }],
+          "file": "spreads-restack-on.webp",
+          "pictureWidth": 448,
+          "pictureHeight": 588,
+          "bytes": 32588,
+          "sha256": "56009424d190cb03e0024de4f41dab5f22d18567b019d0ecc0a4957878f31bb7"
+        }
+      ]
+    },
+    "size-fit-enlarge": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "screen": { "width": 1272, "height": 1696 },
+      "screenLabel": "Kindle Paperwhite 6, 1272 × 1696",
+      "variants": [
+        {
+          "id": "fit",
+          "label": "Page size: Fit, never enlarge",
+          "flags": [],
+          "width": 992,
+          "height": 1373,
+          "pageBytes": 225634,
+          "file": "size-fit-enlarge-fit.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 41594,
+          "sha256": "7b00966cc0d4b0ef740bc3aa756b7be95d5c868ea8b37b049a1cfe65463e9cb5"
+        },
+        {
+          "id": "enlarge",
+          "label": "Page size: Fit, enlarging small pages",
+          "flags": ["--upscale"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "file": "size-fit-enlarge-enlarge.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 933,
+          "bytes": 55900,
+          "sha256": "22f1b1653c8a6925aaa6508ae23bd29b24149d7766fed0d14cf8ee1e40a6d3ed"
+        }
+      ]
+    },
+    "size-stretch-fill": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "screen": { "width": 954, "height": 1696 },
+      "screenLabel": "reMarkable Paper Pro Move, 954 × 1696",
+      "variants": [
+        {
+          "id": "enlarge",
+          "label": "Page size: Fit, enlarging small pages",
+          "flags": ["--upscale"],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 189300,
+          "file": "size-stretch-fill-enlarge.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 63656,
+          "sha256": "f6a26d27fd48164419d51cf0f9efc8b99b1463433bcd98f255241345ca28ff36"
+        },
+        {
+          "id": "stretch",
+          "label": "Page size: Stretch to the screen",
+          "flags": ["--stretch"],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 223773,
+          "file": "size-stretch-fill-stretch.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 77410,
+          "sha256": "eeec63a99abaa6a385ccd85f0967f8f3776dff4d02fb43ee40177932eeaffa4f"
+        },
+        {
+          "id": "fill",
+          "label": "Page size: Crop to fill the screen",
+          "flags": ["--wallpaper"],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 237023,
+          "file": "size-stretch-fill-fill.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 87790,
+          "sha256": "4e216cc25e99f2a3dfe0ac5ec7b5f0b427d3c6cb362516bac15891ddab727303"
+        }
+      ]
+    },
+    "borders-light-page": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "screen": { "width": 954, "height": 1696 },
+      "screenLabel": "reMarkable Paper Pro Move, 954 × 1696",
+      "variants": [
+        {
+          "id": "automatic",
+          "label": "Borders: Automatic",
+          "flags": [],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 189300,
+          "file": "borders-light-page-automatic.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 63656,
+          "sha256": "f6a26d27fd48164419d51cf0f9efc8b99b1463433bcd98f255241345ca28ff36"
+        },
+        {
+          "id": "white",
+          "label": "Borders: White",
+          "flags": ["--whiteborders"],
+          "width": 954,
+          "height": 1320,
+          "pageBytes": 186880,
+          "file": "borders-light-page-white.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 63796,
+          "sha256": "3fddaa11955642cc90849e8b26af31b3a8c14bac228486ab91e548095a37b447"
+        },
+        {
+          "id": "black",
+          "label": "Borders: Black",
+          "flags": ["--blackborders"],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 191409,
+          "file": "borders-light-page-black.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 63488,
+          "sha256": "555d3683313e5e7bc3c6a3e30c275a83884419e81765cb4438a542c17897d519"
+        }
+      ]
+    },
+    "borders-dark-page": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["wikipetan-darknesses"],
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "source": { "width": 699, "height": 1078 },
+      "screen": { "width": 954, "height": 1696 },
+      "screenLabel": "reMarkable Paper Pro Move, 954 × 1696",
+      "variants": [
+        {
+          "id": "automatic",
+          "label": "Borders: Automatic",
+          "flags": [],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 232278,
+          "file": "borders-dark-page-automatic.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 89722,
+          "sha256": "19db9e457ebc69bd9b1ccaded469b038db2bcb964a9a38fc85ef0e12c9cbf7c4"
+        },
+        {
+          "id": "white",
+          "label": "Borders: White",
+          "flags": ["--whiteborders"],
+          "width": 954,
+          "height": 1471,
+          "pageBytes": 229944,
+          "file": "borders-dark-page-white.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 89876,
+          "sha256": "0705a7da8ffd48dc8830e15a27a78d380be14a649b5a7744f849e3c42df33051"
+        },
+        {
+          "id": "black",
+          "label": "Borders: Black",
+          "flags": ["--blackborders"],
+          "width": 954,
+          "height": 1696,
+          "pageBytes": 232278,
+          "file": "borders-dark-page-black.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 1244,
+          "bytes": 89722,
+          "sha256": "19db9e457ebc69bd9b1ccaded469b038db2bcb964a9a38fc85ef0e12c9cbf7c4"
+        }
+      ]
+    },
+    "format-zoom": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "jpeg",
+          "label": "Page format: JPEG, full tone",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "file": "format-zoom-jpeg.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 700,
+          "bytes": 28130,
+          "sha256": "83f52e2ed973634719b4b744ed9879836848598e106692dfc660ca5209b48a27"
+        },
+        {
+          "id": "png",
+          "label": "Page format: PNG, reduced to the screen’s grays",
+          "flags": ["--forcepng"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 347521,
+          "file": "format-zoom-png.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 700,
+          "bytes": 32658,
+          "sha256": "e372db87bd57a59e8ead845a9c8c7db3c5d573de41797d0029bcd20f69d8b28b"
+        },
+        {
+          "id": "png-256",
+          "label": "Page format: PNG, with Keep all 256 grays",
+          "flags": ["--forcepng", "--noquantize"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 755923,
+          "file": "format-zoom-png-256.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 700,
+          "bytes": 27074,
+          "sha256": "422446f5c85b61a3bfb6733be48b817ba136d431973c98e0b669334ac8e157e4"
+        }
+      ]
+    },
+    "format-files": {
+      "kind": "files",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "jpeg",
+          "label": "Page format: JPEG, full tone",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "png",
+          "label": "Page format: PNG, reduced to the screen’s grays",
+          "flags": ["--forcepng"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 347521,
+          "fileType": "PNG",
+          "sameAsInput": false
+        },
+        {
+          "id": "png-8bit",
+          "label": "PNG with 8-bit PNG",
+          "flags": ["--forcepng", "--pnglegacy"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 416169,
+          "fileType": "PNG",
+          "sameAsInput": false
+        },
+        {
+          "id": "png-256",
+          "label": "PNG with Keep all 256 grays",
+          "flags": ["--forcepng", "--noquantize"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 755923,
+          "fileType": "PNG",
+          "sameAsInput": false
+        },
+        {
+          "id": "color",
+          "label": "Color pages: Keep in color",
+          "flags": ["--forcecolor"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 299560,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "color-png",
+          "label": "Color pages: Keep in color, with PNG pages",
+          "flags": ["--forcecolor", "--forcepng"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 299560,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "color-png-rgb",
+          "label": "Color pages: Keep in color, with Color pages as PNG too",
+          "flags": ["--forcecolor", "--forcepng", "--force-png-rgb"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 2099905,
+          "fileType": "PNG",
+          "sameAsInput": false
+        }
+      ]
+    },
+    "jpeg-quality-files": {
+      "kind": "files",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "quality-100",
+          "label": "JPEG quality: 100",
+          "flags": ["--jpeg-quality", "100"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 767393,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-95",
+          "label": "JPEG quality: 95",
+          "flags": ["--jpeg-quality", "95"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 447358,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-90",
+          "label": "JPEG quality: 90",
+          "flags": ["--jpeg-quality", "90"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 323356,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-85",
+          "label": "JPEG quality: 85",
+          "flags": ["--jpeg-quality", "85"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-70",
+          "label": "JPEG quality: 70",
+          "flags": ["--jpeg-quality", "70"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 178793,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-50",
+          "label": "JPEG quality: 50",
+          "flags": ["--jpeg-quality", "50"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 131244,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-30",
+          "label": "JPEG quality: 30",
+          "flags": ["--jpeg-quality", "30"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 94209,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "quality-10",
+          "label": "JPEG quality: 10",
+          "flags": ["--jpeg-quality", "10"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 45633,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        }
+      ]
+    },
+    "jpeg-quality-zoom": {
+      "kind": "pictures",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "quality-85",
+          "label": "JPEG quality: 85",
+          "flags": ["--jpeg-quality", "85"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "file": "jpeg-quality-zoom-quality-85.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 438,
+          "bytes": 14204,
+          "sha256": "d74045394ac4462ec7f252d61961dd231bb12a8971f78478de5bbad384bc4f1d"
+        },
+        {
+          "id": "quality-30",
+          "label": "JPEG quality: 30",
+          "flags": ["--jpeg-quality", "30"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 94209,
+          "file": "jpeg-quality-zoom-quality-30.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 438,
+          "bytes": 14310,
+          "sha256": "8a179deeb77a71ead728d4c0d81a7bbee8f5c1a85825642f02c2dcb8082845b4"
+        },
+        {
+          "id": "quality-10",
+          "label": "JPEG quality: 10",
+          "flags": ["--jpeg-quality", "10"],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 45633,
+          "file": "jpeg-quality-zoom-quality-10.webp",
+          "pictureWidth": 700,
+          "pictureHeight": 438,
+          "bytes": 12624,
+          "sha256": "bfb4cdf8a8f4acdcd206ffcb94d972b7c935bf7f9e4c241eab98a513089be442"
+        }
+      ]
+    },
+    "as-they-are": {
+      "kind": "files",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "variants": [
+        {
+          "id": "processed",
+          "label": "Use the images as they are: Off",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 260931,
+          "fileType": "JPEG",
+          "sameAsInput": false
+        },
+        {
+          "id": "untouched",
+          "label": "Use the images as they are: On",
+          "flags": ["--noprocessing"],
+          "width": 992,
+          "height": 1373,
+          "pageBytes": 396499,
+          "fileType": "JPEG",
+          "sameAsInput": true
+        }
+      ]
+    },
+    "reading-webtoon": {
+      "kind": "pictures",
+      "layout": "rows",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 4119 },
+      "variants": [
+        {
+          "id": "pages",
+          "label": "Content: Manga or comic pages",
+          "flags": [],
+          "width": 1272,
+          "height": 1696,
+          "pageBytes": 936006,
+          "pages": [
+            { "width": 1272, "height": 1696, "bytes": 255251 },
+            { "width": 1272, "height": 1696, "bytes": 309005 },
+            { "width": 1272, "height": 1696, "bytes": 371750 }
+          ],
+          "file": "reading-webtoon-pages.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 491,
+          "bytes": 67848,
+          "sha256": "808e369384f493ab70ef7cd169f54f1f4a6aff787fec1a95d4392fcafa78b3ee"
+        },
+        {
+          "id": "webtoon",
+          "label": "Content: Webtoon strips",
+          "flags": ["--webtoon"],
+          "width": 992,
+          "height": 1494,
+          "pageBytes": 768824,
+          "pages": [
+            { "width": 992, "height": 1494, "bytes": 256418 },
+            { "width": 992, "height": 1092, "bytes": 184379 },
+            { "width": 992, "height": 1347, "bytes": 328027 }
+          ],
+          "file": "reading-webtoon-webtoon.webp",
+          "pictureWidth": 1100,
+          "pictureHeight": 479,
+          "bytes": 73804,
+          "sha256": "ed40e19a1a45092fa11a042caddde21e75bc8271a2919d6dac69e6fb9d3cb8c6"
+        }
+      ]
+    },
+    "reading-webtoon-pages": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 4119 },
+      "columns": ["pages"],
+      "variants": [
+        {
+          "id": "pages",
+          "label": "Content: Manga or comic pages",
+          "flags": [],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "webtoon",
+          "label": "Content: Webtoon strips",
+          "flags": ["--webtoon"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["992 × 1494", "992 × 1092", "992 × 1347"]
+          }
+        },
+        {
+          "id": "fill",
+          "label": "Webtoon strips, with Page size: Crop to fill the screen",
+          "flags": ["--webtoon", "--wallpaper"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "stretch",
+          "label": "Webtoon strips, with Page size: Stretch to the screen",
+          "flags": ["--webtoon", "--stretch"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "gutters",
+          "label": "Webtoon strips, with Inter-panel cropping: Horizontal gaps",
+          "flags": ["--webtoon", "--ipc", "horizontal"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["992 × 1494", "992 × 1004", "992 × 1303"]
+          }
+        },
+        {
+          "id": "borders",
+          "label": "Webtoon strips, with Borders: Black",
+          "flags": ["--webtoon", "--blackborders"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["992 × 1494", "992 × 1092", "992 × 1347"]
+          }
+        },
+        {
+          "id": "cropping",
+          "label": "Webtoon strips, with Page cropping: Disabled",
+          "flags": ["--webtoon", "--cropping", "disabled"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["992 × 1494", "992 × 1092", "992 × 1347"]
+          }
+        },
+        {
+          "id": "untouched",
+          "label": "Webtoon strips, with Use the images as they are",
+          "flags": ["--webtoon", "--noprocessing"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-webtoon-pages.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["992 × 1494", "992 × 1092", "992 × 1347"]
+          }
+        }
+      ]
+    },
+    "reading-direction": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["direction"],
+      "variants": [
+        {
+          "id": "epub-on",
+          "label": "EPUB, Manga reading order: On",
+          "flags": ["--manga-style"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-direction.epub",
+            "title": "reading-direction",
+            "author": "Unknown",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "epub-off",
+          "label": "EPUB, Manga reading order: Off",
+          "flags": [],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-direction.epub",
+            "title": "reading-direction",
+            "author": "Unknown",
+            "language": "en-US",
+            "direction": "ltr",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "epub-webtoon",
+          "label": "EPUB, Webtoon strips, with Manga reading order on",
+          "flags": ["--webtoon", "--manga-style"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-direction.epub",
+            "title": "reading-direction",
+            "author": "Unknown",
+            "language": "en-US",
+            "direction": "ltr",
+            "comicInfo": "none",
+            "pages": ["992 × 1494", "992 × 1092", "992 × 1347"]
+          }
+        },
+        {
+          "id": "pdf-on",
+          "label": "PDF, Manga reading order: On",
+          "flags": ["--manga-style"],
+          "format": "pdf",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-direction.pdf",
+            "title": "reading-direction",
+            "author": "Unknown",
+            "language": null,
+            "direction": null,
+            "comicInfo": "none"
+          }
+        },
+        {
+          "id": "cbz-on",
+          "label": "CBZ, Manga reading order: On",
+          "flags": ["--manga-style"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "reading-direction.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        }
+      ]
+    },
+    "metadata-formats": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["title", "author", "language"],
+      "variants": [
+        {
+          "id": "epub",
+          "label": "EPUB",
+          "flags": ["--title", "Pepper & Carrot 6", "--author", "D. Revoy", "--language", "ja"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper & Carrot 6",
+            "author": "D. Revoy",
+            "language": "ja",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "pdf",
+          "label": "PDF",
+          "flags": ["--title", "Pepper & Carrot 6", "--author", "D. Revoy", "--language", "ja"],
+          "format": "pdf",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.pdf",
+            "title": "Pepper & Carrot 6",
+            "author": "D. Revoy",
+            "language": null,
+            "direction": null,
+            "comicInfo": "none"
+          }
+        },
+        {
+          "id": "cbz",
+          "label": "CBZ",
+          "flags": ["--title", "Pepper & Carrot 6", "--author", "D. Revoy", "--language", "ja"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        }
+      ]
+    },
+    "metadata-title-author": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["title", "author"],
+      "variants": [
+        {
+          "id": "plain",
+          "label": "Nothing given, and no ComicInfo.xml",
+          "flags": [],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper and Carrot 06",
+            "author": "Unknown",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "info",
+          "label": "Nothing given, with a ComicInfo.xml",
+          "flags": [],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "title",
+          "label": "Title given",
+          "flags": ["--title", "Pepper & Carrot 6"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper & Carrot 6",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "author",
+          "label": "Author given",
+          "flags": ["--author", "D. Revoy"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "D. Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "both",
+          "label": "Both given",
+          "flags": ["--title", "Pepper & Carrot 6", "--author", "D. Revoy"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper & Carrot 6",
+            "author": "D. Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        }
+      ]
+    },
+    "metadata-comicinfo-title": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["title"],
+      "variants": [
+        {
+          "id": "series-only",
+          "label": "ComicInfo title: Use series, volume, and number",
+          "flags": ["--metadatatitle", "series-only"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "combine",
+          "label": "ComicInfo title: Append the ComicInfo title",
+          "flags": ["--metadatatitle", "combine"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006: The Potion Contest",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "title-only",
+          "label": "ComicInfo title: Use the ComicInfo title only",
+          "flags": ["--metadatatitle", "title-only"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "The Potion Contest",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "given-series-only",
+          "label": "A title given, with Use series, volume, and number",
+          "flags": ["--title", "Pepper & Carrot 6", "--metadatatitle", "series-only"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper & Carrot 6",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "given-combine",
+          "label": "A title given, with Append the ComicInfo title",
+          "flags": ["--title", "Pepper & Carrot 6", "--metadatatitle", "combine"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper & Carrot 6",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "given-title-only",
+          "label": "A title given, with Use the ComicInfo title only",
+          "flags": ["--title", "Pepper & Carrot 6", "--metadatatitle", "title-only"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "The Potion Contest",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "no-info",
+          "label": "Use the ComicInfo title only, and no ComicInfo.xml",
+          "flags": ["--metadatatitle", "title-only"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper and Carrot 06",
+            "author": "Unknown",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        }
+      ]
+    },
+    "metadata-keep-comicinfo": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["comicInfo"],
+      "variants": [
+        {
+          "id": "off",
+          "label": "CBZ, Keep ComicInfo.xml: Off",
+          "flags": [],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "on",
+          "label": "CBZ, Keep ComicInfo.xml: On",
+          "flags": ["--keepcomicinfo"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "copy",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "on-given",
+          "label": "CBZ, Keep ComicInfo.xml: On, with a title and an author given",
+          "flags": ["--keepcomicinfo", "--title", "Pepper & Carrot 6", "--author", "D. Revoy"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "copy",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "on-plain",
+          "label": "CBZ, Keep ComicInfo.xml: On, and no ComicInfo.xml in the input",
+          "flags": ["--keepcomicinfo"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        },
+        {
+          "id": "epub",
+          "label": "EPUB, Keep ComicInfo.xml: On",
+          "flags": ["--keepcomicinfo"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "pdf",
+          "label": "PDF, Keep ComicInfo.xml: On",
+          "flags": ["--keepcomicinfo"],
+          "format": "pdf",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.pdf",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": null,
+            "direction": null,
+            "comicInfo": "none"
+          }
+        }
+      ]
+    },
+    "metadata-language": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["language"],
+      "variants": [
+        {
+          "id": "default",
+          "label": "EPUB language: not given",
+          "flags": [],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "ja",
+          "label": "EPUB language: ja",
+          "flags": ["--language", "ja"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "ja",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "pt-BR",
+          "label": "EPUB language: pt-BR",
+          "flags": ["--language", "pt-BR"],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "pt-BR",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        },
+        {
+          "id": "pdf",
+          "label": "PDF, with ja",
+          "flags": ["--language", "ja"],
+          "format": "pdf",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.pdf",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": null,
+            "direction": null,
+            "comicInfo": "none"
+          }
+        },
+        {
+          "id": "cbz",
+          "label": "CBZ, with ja",
+          "flags": ["--language", "ja"],
+          "format": "cbz",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1272 × 1696", "1272 × 1696", "1272 × 1696"]
+          }
+        }
+      ]
+    },
+    "metadata-kepub": {
+      "kind": "book",
+      "layout": "grid",
+      "sources": ["pepper-ep06"],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": { "width": 992, "height": 1373 },
+      "columns": ["fileName"],
+      "variants": [
+        {
+          "id": "kobo",
+          "label": "Kobo Libra Colour, EPUB",
+          "flags": [],
+          "format": "epub",
+          "profile": "KoLC",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.kepub.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1214 × 1680", "1168 × 1680", "1158 × 1680"]
+          }
+        },
+        {
+          "id": "kobo-plain",
+          "label": "Kobo Libra Colour, EPUB, Name the book .epub: On",
+          "flags": ["--nokepub"],
+          "format": "epub",
+          "profile": "KoLC",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1214 × 1680", "1168 × 1680", "1158 × 1680"]
+          }
+        },
+        {
+          "id": "kobo-custom",
+          "label": "Kobo Libra Colour, EPUB, with a Custom width",
+          "flags": ["--customwidth", "1000"],
+          "format": "epub",
+          "profile": "KoLC",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1000 × 1384", "1000 × 1439", "1000 × 1451"]
+          }
+        },
+        {
+          "id": "kobo-cbz",
+          "label": "Kobo Libra Colour, CBZ",
+          "flags": [],
+          "format": "cbz",
+          "profile": "KoLC",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.cbz",
+            "title": null,
+            "author": null,
+            "language": null,
+            "direction": null,
+            "comicInfo": "none",
+            "pages": ["1264 × 1680", "1264 × 1680", "1264 × 1680"]
+          }
+        },
+        {
+          "id": "kindle",
+          "label": "Kindle Paperwhite 6, EPUB",
+          "flags": [],
+          "format": "epub",
+          "profile": "KPW6",
+          "facts": {
+            "fileName": "Pepper and Carrot 06.epub",
+            "title": "Pepper&Carrot Vol. 01 #006",
+            "author": "David Revoy",
+            "language": "en-US",
+            "direction": "rtl",
+            "comicInfo": "none",
+            "pages": ["1225 × 1696", "1179 × 1696", "1169 × 1696"]
+          }
+        }
+      ]
+    }
+  }
+}
