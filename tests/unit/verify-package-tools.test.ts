@@ -75,9 +75,9 @@ describe('the package tool check', () => {
     const run = verify(lock);
     expect(run.status).toBe(1);
     expect(run.output).toContain('the app would refuse to convert');
-    expect(run.output).toContain(
-      'mangapress: usr/lib/mangabound/resources/toolchain/linux-x64/mangapress',
-    );
+    // The script names the file as the operating system writes its path: backslashes on Windows.
+    const edited = path.join('usr', 'lib', 'mangabound', 'resources', 'toolchain', 'linux-x64');
+    expect(run.output).toContain(`mangapress: ${path.join(edited, 'mangapress')}`);
     expect(run.output).toContain(sha256(pinned.mangapress));
     expect(run.output).not.toContain('mangabind:');
   });
